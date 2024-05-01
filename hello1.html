@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates onsubmit -->
+
+<html lang="en">
+  <head>
+    <script>
+      function greet() {
+        alert("hello, " + document.querySelector("#name").value);
+      }
+    </script>
+    <title>hello</title>
+  </head>
+  <body>
+    <!-- 不要将此表单提交到服务器 -->
+    <form onsubmit="greet(); return false;">
+      <input
+        autocomplete="off"
+        autofocus
+        id="name"
+        placeholder="Name"
+        type="text"
+      />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
