@@ -1,0 +1,11 @@
+sort1 uses:Bubble sort
+
+How do you know?: "Notice that sort1 takes significantly less time to sort a sorted sequence compared to random and reversed sequences, so sort1 should be Bubble sort."
+
+sort2 uses: Merge sort
+
+How do you know?:Firstly, we can observe that sort2 is much faster than the other two algorithms on any file, and even when the number of elements to be sorted increases from 5000 to 50000, the time taken only increases by a factor of 4. Therefore, we can confirm that sort2 is Merge sort.
+
+sort3 uses:Selection sort
+
+How do you know?: "The time taken by sort3 on the three types of files is similar, so sort3 should be Selection sort."
