@@ -29,7 +29,11 @@
         });
         button1.addEventListener("click",function(event){
             if(input.innerText === 'Switzerland'){
-                span1.style.color
+                input.style.color='green';
+                span1.innerText='Correct';
+            }else{
+                input.style.color='red';
+                span1.innerText='InCorrect';
             }
         })
       });
