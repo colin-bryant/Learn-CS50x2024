@@ -37,8 +37,7 @@ h1 {
   font-size: 48px;
 }
 
-button,
-input[type="submit"] {
+button,input[type="submit"] {
   background-color: #d9edff;
   border: 1px solid transparent;
   border-radius: 0.25rem;
@@ -50,7 +49,7 @@ input[type="submit"] {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   vertical-align: middle;
-  margin: 2rem;
+  margin: 20rem;
 }
 
 input[type="text"] {
