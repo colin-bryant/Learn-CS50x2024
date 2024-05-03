@@ -67,3 +67,6 @@ input[type="text"]:hover {
     /* 设置行内块 */
     display: inline-block;
 }
+#span1 {
+    margin: 0 50px;
+}
