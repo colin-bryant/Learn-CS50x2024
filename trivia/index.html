@@ -8,16 +8,6 @@
     />
     <link href="styles.css" rel="stylesheet" />
     <title>Trivia!</title>
-    <script>
-      // TODO: Add code to check answers to questions
-      let button = document.querySelector("button");
-      let span = document.querySelector("span");
-      button.addEventListener("click", function (event) {
-        button.value !== "6 people per 1 sheep"
-          ? (span.innerText = "Incorrect")
-          : (span.innerText = "Correct");
-      });
-    </script>
   </head>
   <body>
     <div class="header">
@@ -46,5 +36,16 @@
         <!-- TODO: Add free response question here -->
       </div>
     </div>
-  </body>
+    <script>
+      // TODO: Add code to check answers to questions
+      let button = document.querySelector("button");
+      let span = document.querySelector("span");
+      button.addEventListener("submit", function (event) {
+        // button.value == "6 people per 1 sheep"
+        //   ? (span.innerText = "Correct")
+        //   : (span.innerText = "Incorrect");
+        console.log(button.value);
+      });
+    </script>
+  </body> 
 </html>
