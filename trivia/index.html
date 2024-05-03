@@ -13,7 +13,9 @@
       document.addEventListener("DOMContentLoaded", function () {
         const buttons = document.querySelectorAll("button");
         const span = document.querySelector("span");
-
+        const input = document.querySelector("input")
+        const button1 =document.getElementById('button1');
+        const span1 = document.getElementById('span1');
         buttons.forEach((button) => {
           button.addEventListener("click", function (event) {
             if (event.target.innerText === "6 people per 1 sheep") {
@@ -23,8 +25,13 @@
               span.innerText = "Incorrect";
               event.target.style.backgroundColor = "red";
             }
-          });
+          })
         });
+        button1.addEventListener("click",function(event){
+            if(input.innerText === 'Switzerland'){
+                span1.style.color
+            }
+        })
       });
     </script>
   </head>
@@ -41,7 +48,7 @@
         <h3>
           What is the approximate ratio of people to sheep in New Zealand?
         </h3>
-        <span></span>
+        <span ></span>
         <button type="submit">6 people per 1 sheep</button>
         <button type="submit">3 people per 1 sheep</button>
         <button type="submit">1 people per 1 sheep</button>
@@ -55,7 +62,7 @@
         <!-- TODO: Add free response question here -->
         <h3>In Whcih country is it illegal to own only one guinea pig,as a lone guinea pig might get lonely!</h3>
         <input type="text" autocomplete="off" autofocus placeholder="country?">
-        <button type="submit">Check Answer</button>
+        <button  id="button1"type="submit">Check Answer</button>
 
       </div>
     </div>
