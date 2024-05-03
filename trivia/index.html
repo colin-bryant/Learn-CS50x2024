@@ -13,7 +13,7 @@
       let button = document.querySelector("button");
       let span = document.querySelector("span");
       button.addEventListener("click", function (event) {
-        button.value != "6 people per 1 sheep"
+        button.value !== "6 people per 1 sheep"
           ? (span.innerText = "Incorrect")
           : (span.innerText = "Correct");
       });
