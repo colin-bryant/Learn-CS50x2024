@@ -9,20 +9,24 @@
     <link href="styles.css" rel="stylesheet" />
     <title>Trivia!</title>
     <script>
-        // TODO: Add code to check answers to questions
-        document.addEventListener("DOMContentLoaded", function() {
-  const buttons = document.querySelectorAll("button");
-  const span = document.querySelector("span");
+      // TODO: Add code to check answers to questions
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll("button");
+        const span = document.querySelector("span");
 
-  buttons.forEach(button => {
-    button.addEventListener("click", function(event) {
-      span.innerText = event.target.innerText === "6 people per 1 sheep" ? "Correct" : "Incorrect";
-    });
-  });
-});
-
-        
-      </script>
+        buttons.forEach((button) => {
+          button.addEventListener("click", function (event) {
+            if (event.target.innerText === "6 people per 1 sheep") {
+              span.innerText = "Correct";
+              event.target.style.backgroundColor = "green";
+            } else {
+              span.innerText = "Incorrect";
+              event.target.style.backgroundColor = "red";
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="header">
@@ -49,8 +53,8 @@
         <h2>Part 2: Free Response</h2>
         <hr />
         <!-- TODO: Add free response question here -->
+        
       </div>
     </div>
-  
-  </body> 
+  </body>
 </html>
