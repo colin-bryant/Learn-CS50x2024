@@ -10,6 +10,13 @@
     <title>Trivia!</title>
     <script>
       // TODO: Add code to check answers to questions
+      let button = document.querySelector("button");
+      let span = document.querySelector("span");
+      button.addEventListener("submit", function (event) {
+        button.value != "6 people per 1 sheep"
+          ? (span.innerText = "Incorrect")
+          : (span.innerText = "Correct");
+      });
     </script>
   </head>
   <body>
@@ -25,8 +32,8 @@
         <h3>
           What is the approximate ratio of people to sheep in New Zealand?
         </h3>
-        
-        <button type="submit" >6 people per 1 sheep</button>
+        <span></span>
+        <button type="submit">6 people per 1 sheep</button>
         <button type="submit">3 people per 1 sheep</button>
         <button type="submit">1 people per 1 sheep</button>
         <button type="submit">1 people per 3 sheep</button>
