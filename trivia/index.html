@@ -18,6 +18,10 @@
         const span1 = document.getElementById('span1');
         buttons.forEach((button) => {
           button.addEventListener("click", function (event) {
+             // 恢复所有按钮的默认背景颜色
+             buttons.forEach((btn) => {
+              btn.style.backgroundColor = "";
+            });
             if (event.target.innerText === "6 people per 1 sheep") {
               span.innerText = "Correct";
               event.target.style.backgroundColor = "green";
