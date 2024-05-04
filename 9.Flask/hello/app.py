@@ -6,5 +6,5 @@ app = Flask(__name__)
 
 def index():
     
-    name = request.args.get('name','worlds') # ' ' default value   request.args['name']
+    name = request.args.get('name','world') # ' ' default value   request.args['name']
     return render_template('index.html',placeholder=name)
