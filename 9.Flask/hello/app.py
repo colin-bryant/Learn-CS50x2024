@@ -7,4 +7,4 @@ app = Flask(__name__)
 def index():
     
     name = request.args.get('name','world') # ' ' default value   request.args['name']
-    return render_template('index.html',placeholder=name)
+    return render_template('index.html',name=name)
