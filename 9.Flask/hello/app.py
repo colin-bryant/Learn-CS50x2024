@@ -8,7 +8,7 @@ def index():
    # name = request.args.get('name','world') # ' ' default value   request.args['name']
     # return render_template('index.html',name=name)
     if request.method == 'POST':
-        name = request.form['name']
+        name = request.form.get('name','world')
         return render_template('post.html',name=name)
 
             
