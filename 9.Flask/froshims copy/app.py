@@ -25,7 +25,8 @@ def register():
     sport =request.form.get("sport")
     if not sport:
         return render_template("error.html",message="Missing sport")
-    if sport not in SPORTS         
+    if sport not in SPORTS:
+        return render_template("error.html",message="Invalid sport")        
     
     # Confirm registration
     return render_template("success.html")
