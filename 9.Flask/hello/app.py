@@ -9,9 +9,11 @@ def index():
     # return render_template('index.html',name=name)
     if request.method == 'POST':
         name = request.form['name']
-        return render_template('index.html',name=name)
+        return render_template('post.html',name=name)
+    else:
+            
     return render_template('index.html')
-    
+
 @app.route('/greet',methods=['POST'])
 def greet():
     # name = request.args.get('name','world')
