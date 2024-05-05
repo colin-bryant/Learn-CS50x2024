@@ -15,7 +15,7 @@ SPORTS = [
 def index():
     return render_template("index.html",sports=SPORTS)
 
-@app.route("/register")  
+@app.route("/register",methods=["POST"] )  
 def register():
     # Validate submission
     if not request.form.get("name") or request.form.get("sports") not in SPORTS:
