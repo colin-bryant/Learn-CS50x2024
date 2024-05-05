@@ -8,7 +8,9 @@ def index():
    # name = request.args.get('name','world') # ' ' default value   request.args['name']
     # return render_template('index.html',name=name)
     if request.method == 'POST':
-        name = request.form.get('name','world')
+        # if name is not provided  ,the form with empty name  also  sumbit the server
+
+        name = request.form.get('name')
         return render_template('greet.html',name=name)
 
             
