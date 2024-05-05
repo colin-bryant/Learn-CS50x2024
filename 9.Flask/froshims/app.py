@@ -14,6 +14,7 @@ SPORTS = [
 
 def index():
     return render_template("index.html",sports=SPORTS)
+
 @app.route("/register")  
 def register():
     # Validate submission
