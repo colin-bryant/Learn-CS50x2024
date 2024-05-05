@@ -17,14 +17,9 @@ def index():
 
 @app.route("/register",methods=["POST"] )  
 def register():
-    # Validate submission
-    # if not request.form.get("Name") or request.form.get("sport") not in SPORTS:
-    #     return render_template("failure.html")
-    if not request.form.get("name"):
-        return render_template("failure.html")
-    for sport in request.form.getlist("sport"):
-        if sport not in SPORTS:
-            return render_template("failure.html")
+    # Validate name
+    name = request
+    
     # Confirm registration
     return render_template("success.html")
 
