@@ -18,7 +18,7 @@ def index():
 @app.route("/register",methods=["POST"] )  
 def register():
     # Validate name
-    name = request.form.get("name")
+    name = request.form.get("Name")
     if not name:
         return render_template("error.html",message="Missing name")
     # Validate sport
