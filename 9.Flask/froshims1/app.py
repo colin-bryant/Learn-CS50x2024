@@ -31,3 +31,8 @@ def register():
     # Confirm registration
     return render_template("success.html")
 
+    #Remember registrant
+    REGISTRANTS[name] = sport
+
+    # Confirm registration
+    return redirect("/registrants")
