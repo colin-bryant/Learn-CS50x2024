@@ -1,6 +1,6 @@
 # Implements a registration form using a select menu, validating sport server-side
 
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,redirect
 
 app=Flask(__name__)
 REGISTRANTS = {}
