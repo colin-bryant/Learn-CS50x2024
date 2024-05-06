@@ -27,5 +27,3 @@ def register():
             return render_template("failure.html")
     # Confirm registration
     return render_template("success.html")
-
--------------------------------------------
