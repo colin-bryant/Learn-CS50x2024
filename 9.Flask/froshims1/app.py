@@ -21,15 +21,13 @@ def register():
     name = request.form.get("name")
     if not name:
         return render_template("error.html",message="Missing name")
-    # Validate sports
+    # Validate sport
     sport =request.form.get("sport")
     if not sport:
         return render_template("error.html",message="Missing sport")
     if sport not in SPORTS:
         return render_template("error.html",message="Invalid sport")        
     
-    # Confirm registration
-    return render_template("success.html")
 
     #Remember registrant
     REGISTRANTS[name] = sport
