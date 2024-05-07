@@ -41,4 +41,5 @@ def register():
     return redirect("/registrants")
 @app.route('/registrants')
 def registrants():
-    return render_template("registrants.html",registrants = REGISTRANTS)
+    registrants=db.execute("SELECT * FROM registrants")
+    return render_template("registrants.html",registrants = registrants)
