@@ -35,7 +35,7 @@ def register():
         return render_template("/failure.html")
 
     #Remember registrant
-    db.execute("INSERT INTO registrants(name,sport) ")
+    db.execute("INSERT INTO registrants(name,sport) VALUES(?,?)",name,sport)
 
     # Confirm registration
     return redirect("/registrants")
