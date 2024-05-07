@@ -1,10 +1,10 @@
 # Implements a registration form using a select menu, validating sport server-side
-
+from cs50 import SQL
 from flask import Flask,render_template,request,redirect
 
 app=Flask(__name__)
 
-REGISTRANTS = {}
+db=SQL("sqlite://froshims.db")
 
 SPORTS = [
     "Basketball",
@@ -16,6 +16,7 @@ SPORTS = [
 
 def index():
     return render_template("index.html",sports=SPORTS)
+    
 
 @app.route("/register",methods=["POST"] )  
 def register():
