@@ -22,6 +22,8 @@ def deregister():
 
     #Forget registrant
     id = request.form.get("id")
+    if id:
+        db.execute("DELETE")
 
 @app.route("/register",methods=["POST"] )  
 def register():
