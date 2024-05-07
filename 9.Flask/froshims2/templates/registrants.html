@@ -8,17 +8,18 @@
     </tr>
   </thead>
   <tbody>
-    {% for name in registrants %}
+    {% for registrant in registrants %}
     <tr>
-      <td>{{name}}</td>
-      <td>{{registrants[name]}}</td>
+      <td>{{registrant.name}}</td>
+      <td>{{registrant.sport}}</td>
+      <td>
+        <form action="/deregister" method="post">
+          <!-- 告诉浏览器不显示该输入字段，但会将其值提交给服务器 -->
+          <input type="hidden" name="id" value="{{registrant.id}}" />
+          <button type="submit">Deregister</button>
+        </form>
+      </td>
     </tr>
-    <td>
-      <form action="/deregister" method="post">
-        <input type="hidden" name="id" value="{{registrant.id}}" />
-        <button type="submit">Deregister</button>
-      </form>
-    </td>
     {% endfor %}
   </tbody>
 </table>
