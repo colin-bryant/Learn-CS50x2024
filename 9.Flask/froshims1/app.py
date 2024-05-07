@@ -16,7 +16,12 @@ SPORTS = [
 
 def index():
     return render_template("index.html",sports=SPORTS)
-    
+
+@app.route("/deregister",methods=["POST"])
+def deregister():
+
+    #Forget registrant
+    id = request.form.get("id")
 
 @app.route("/register",methods=["POST"] )  
 def register():
