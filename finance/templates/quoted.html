@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <table >
+        <thead>
+
+        <tr>
+
+            <th>price</th>
+            <th>symbol</th>
+
+        </tr>
+         </thead>
+
+         <tbody>
+
+             <tr>
+                <td>{{quote['price']}}</td>
+                <td>{{quote['symbol']}}</td>
+
+             </tr>
+         </tbody>
+    </table>
+{% endblock %}
+

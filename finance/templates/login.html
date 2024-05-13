@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post" class="mt-5">
+        <div class="mb-3">
+
+            <input id="username" autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="mb-3">
+
+            <input id="password" class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+
+
+{% endblock %}
+
+{% block section %}
+
+    <ul  class="navbar-nav me-auto mt-2">
+        <li class="nav-item">Don't have an account yet?<a class="register-link" href="/register"> Register Now 👉</a></li>
+    </ul>
+{% endblock %}

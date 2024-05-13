@@ -1,0 +1,26 @@
+cs50
+Flask
+Flask-Session
+pytz
+requests
+            <tr>
+               <td></td>
+               <td></td>
+               <th>Cash</th>
+               <td>{{cash | usd}} </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <th>TOTAL</th>
+
+               <td>
+
+              {{ (total_price_sum + cash) | usd}}
+               </td>
+
+            </tr>
+<td>
+
+           {{ (total_price_sum + cash) | usd}}
+            </td>
