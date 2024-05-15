@@ -12,10 +12,15 @@
      2.id       100
      3.class :hover 10  
      4.type  ::after  1
+
+     和顺序没有关系 并不会因为在后面优先级就更高
      */
      #foo {
         color: brown;
      }
+      h1{
+        color: blue;
+      }
      .bar {
         color: salmon;
      }
@@ -23,7 +28,7 @@
 </head>
 <body>
     <h1 id="foo">Welcome to my Web Page!</h1>
-    <h1 class="bar">This is a second heading</h1>
+    <h2 class="bar">This is a second heading</h2>
     Hello World!
 </body>
 </html>
