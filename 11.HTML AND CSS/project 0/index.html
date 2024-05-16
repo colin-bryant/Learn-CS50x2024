@@ -30,8 +30,14 @@
       width: 16px;
       margin-top: 5px;
     }
-    form{
-        margin: 0 auto;
+    main{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 50vh;
+    }
+    .img{
+
     }
   </style>
   <body>
@@ -53,9 +59,12 @@
       </div>
       <div class="item"><a href="https://www.google.com">fang</a></div>
     </nav>
-    <form action="https://www.google.com/search">
-      <input type="text" name="q" />
-      <input type="submit" value="Google Search" />
-    </form>
+    <main>
+        <div class="img"><img src="googlelogo_color_272x92dp.png" alt=""></div>
+        <form action="https://www.google.com/search">
+          <input type="text" name="q" />
+          <input type="submit" value="Google Search" />
+        </form>
+    </main>
   </body>
 </html>
