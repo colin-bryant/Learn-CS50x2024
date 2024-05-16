@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-    </head>
-    <style>
-        nav{
-            display: flex;
-            
-        }
-    </style>
-    <body>
-        <nav >
-            <div class="item"><a href="https://mail.google.com/mail/">Gmail</a></div>
-            <div class="item"><a href="https://mail.google.com/mail/">Images</a></div>
-            <div class="item"><a href="https://mail.google.com/mail/">Gmail</a></div>
-            <div class="item"><a href="https://mail.google.com/mail/">Gmail</a></div>
-        </nav>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-    </body>
+  <head>
+    <title>Search</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    nav {
+      display: flex;
+      justify-content: end;
+    }
+    .item {
+      line-height: 24px;
+      padding: 8px;
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="item"><a href="https://mail.google.com/mail/">Gmail</a></div>
+      <div class="item"><a href="https://mail.google.com/mail/">Images</a></div>
+      <div class="item"><a href="https://mail.google.com/mail/"><svg class="gb_h" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path><image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24" style="border:none;display:none \9"></image></svg></a></div>
+      <div class="item"><a href="https://mail.google.com/mail/">Gmail</a></div>
+    </nav>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <input type="submit" value="Google Search" />
+    </form>
+  </body>
 </html>
