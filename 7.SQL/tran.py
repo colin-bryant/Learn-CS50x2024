@@ -25,6 +25,7 @@ json_response = json.loads(response.text)
 translated_text = json_response['data']
 
 
+
 # 定义新文件名
 output_file_name = "linuz_zh.srt"
 
