@@ -2,7 +2,7 @@ import requests
 import json
 
 url = "https://api.deeplx.org/translate"
-text ="Hello, world!     hello, fangfang"
+# text ="Hello, world!     hello, fangfang"
 # 读取文本文件内容
 with open("text_content.srt", "r", encoding="utf-8") as file:
     text = file.read()
