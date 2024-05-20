@@ -26,7 +26,7 @@ translated_text = json_response['data']
 
 
 # 定义新文件名
-output_file_name = "linux.txt"
+output_file_name = "linuz_zh.txt"
 
 # 写入翻译后的文本到新文件中
 with open(output_file_name, "w", encoding="utf-8") as output_file:
