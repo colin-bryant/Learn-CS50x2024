@@ -4,7 +4,7 @@ import json
 url = "https://api.deeplx.org/translate"
 # text ="Hello, world!     hello, fangfang"
 # 读取文本文件内容
-with open("text_content.srt", "r", encoding="utf-8") as file:
+with open("linux.txt", "r", encoding="utf-8") as file:
     text = file.read()
 
 payload = json.dumps({
@@ -26,7 +26,7 @@ translated_text = json_response['data']
 
 
 # 定义新文件名
-output_file_name = "translated_text.txt"
+output_file_name = "linux.txt"
 
 # 写入翻译后的文本到新文件中
 with open(output_file_name, "w", encoding="utf-8") as output_file:
